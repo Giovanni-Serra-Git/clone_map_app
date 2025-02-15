@@ -14,6 +14,12 @@ import useLogin from '../features/login/useLogin';
 import { reset } from '../features/cities/citiesSlice.js';
 import { logout } from '../features/login/loginSlice.js';
 
+import L from 'leaflet';
+
+L.Icon.Default.mergeOptions({
+    iconUrl: '/public/marker-icon.png',
+  });
+
 function ChangeView({ center }) {
     const map = useMap();
     map.setView(center);
