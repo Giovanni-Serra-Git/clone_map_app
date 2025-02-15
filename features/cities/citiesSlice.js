@@ -114,6 +114,7 @@ function fetchCities() {
             }
 
             const data = await res.json()
+            console.log(data)
             dispatch({type: "city/loaded", payload: data})            
         } catch (error) {
             dispatch({type: "city/error", payload: error.message })
