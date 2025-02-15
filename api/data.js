@@ -11,6 +11,7 @@ export default async function handler(req, res) {
     const data = await fs.readFile(filePath, 'utf8'); // Usa fs.promises per la lettura asincrona
 
     res.status(200).json(JSON.parse(data)); // Risponde con i dati JSON
+    console.log(data)
   } catch (error) {
     res.status(500).json({ message: 'Errore nel leggere il file JSON' });
   }
