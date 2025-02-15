@@ -10,7 +10,7 @@ const initialState = {
     currentCity: null,  
 }
 
-const BASE_URL = `https://rare-fascinated-marlin.glitch.me/cities`
+const BASE_URL = `https://rare-fascinated-marlin.glitch.me`
 
 
 function citiesReducer(state = initialState, action) {
