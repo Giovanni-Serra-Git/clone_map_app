@@ -10,7 +10,7 @@ const initialState = {
     currentCity: null,  
 }
 
-const BASE_URL = "https://clone-map-app.vercel.app/api"
+const BASE_URL = "https://clone-map-app.vercel.app/api/cities"
 
 
 function citiesReducer(state = initialState, action) {
