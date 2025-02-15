@@ -2,12 +2,12 @@
 
 import { useState } from "react"
 import Flag from "react-world-flags"
-import { UseCities } from "../context/CitiesContext"
+import useCities from "../features/cities/useCities"
 
 /* eslint-disable react/prop-types */
 function Countries() {
 
-    const {cities,errorFetching, isLoading} = UseCities()
+    const {cities,errorFetching, isLoading} = useCities()
 
     const countries = cities?.reduce(( previousCountry,nextCountry ) => {
         if (!previousCountry.some( city => city.country === nextCountry.country )) {
