@@ -10,6 +10,8 @@ const initialState = {
     currentCity: null,  
 }
 
+const BASE_URL = "https://clone-map-app.vercel.app/"
+
 
 function citiesReducer(state = initialState, action) {
     switch (action.type) {
@@ -105,7 +107,7 @@ function fetchCities() {
     return async function(dispatch) {
 
         try {
-            const res = await fetch(`http://localhost:9000/cities`);
+            const res = await fetch(`${BASE_URL}/cities`);
 
             if (!res.ok) {
                 throw new Error("No data to display"); 
@@ -131,7 +133,7 @@ function useGetCityId() {
     
         return async function(dispatch) {
             try {
-                const res = await fetch(`http://localhost:9000/cities/${id}`);
+                const res = await fetch(`${BASE_URL}/cities/${id}`);
         
                 if (!res.ok) {
                     throw new Error("No data to display")
@@ -162,7 +164,7 @@ function deleteCity(e,id, city, cities) {
         dispatch({type: "city/loading"})
 
         try {
-            await fetch(`http://localhost:9000/cities/${id}`, {
+            await fetch(`${BASE_URL}/cities/${id}`, {
                 method: "DELETE",
                 headers: {
                     "Content-type": "application/json; charset='utf-8'"
@@ -193,7 +195,7 @@ function reset() {
 // async function createCity(newCity) {
 //     return async function (dispatch) {
 //         try {
-//             const res = await fetch(`http://localhost:9000/cities`, {
+//             const res = await fetch(`${BASE_URL}/cities`, {
 //                 method: "POST",
 //                 headers: {
 //                     "Content-type": "application/json; charset='utf-8'"
@@ -227,7 +229,7 @@ function createCity(newCity) {
             dispatch({ type: "city/loading" });
 
             // Richiesta POST per inviare la città al server
-            const response = await fetch("http://localhost:9000/cities", {
+            const response = await fetch(`${BASE_URL}/cities`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
