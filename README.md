@@ -33,7 +33,7 @@ It also provides a list of countries of the visited cities.
 
 # Sample Data received
 
-   {
+   {  
       **"cityName":** "Lisbon",  
       **"country":** "Portugal",  
       **"emoji":** "pt",  
@@ -42,9 +42,9 @@ It also provides a list of countries of the visited cities.
       **"position":** {  
         "lat": 38.727881642324164,  
         "lng": -9.140900099907554  
-      },  
-      **"id":** "73930385"  
-    },    
+      },    
+      **"id":** "73930385"    
+    },      
 
 # Endpoints:
 
@@ -57,11 +57,11 @@ It also provides a list of countries of the visited cities.
 
 # Features of the App
 
-✔️ Fake login to access the app  :  **Username** Giovanni **Password** 12345
-✔️ Viewing the cities list    
-✔️ Viewing the coutries list   
-✔️ Adding and removing cities from the list    
-✔️ Adding feedback about the city  
+✔️ Fake login to access the app  :  **Username** Giovanni **Password** 12345  
+✔️ View the cities list      
+✔️ View the coutries list     
+✔️ Add and removing cities from the list    
+✔️ Add feedback about the city  
 
 
 # Author
