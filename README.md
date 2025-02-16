@@ -34,34 +34,34 @@ It also provides a list of countries of the visited cities.
 # Sample Data received
 
    {
-      **"cityName":** "Lisbon",
-      **"country":** "Portugal",
-      **"emoji":** "pt",
-      **"date":** "2027-10-31T15:59:59.138Z",
-      **"notes":** "My favorite city so far!",
-      **"position":** {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
-      },
-      **"id":** "73930385"
-    },  
+      **"cityName":** "Lisbon",  
+      **"country":** "Portugal",  
+      **"emoji":** "pt",  
+      **"date":** "2027-10-31T15:59:59.138Z",  
+      **"notes":** "My favorite city so far!",  
+      **"position":** {  
+        "lat": 38.727881642324164,  
+        "lng": -9.140900099907554  
+      },  
+      **"id":** "73930385"  
+    },    
 
 # Endpoints:
 
-**GET - Get List of Cities** BASE_URL/cities`
-**GET - Get specific City** BASE_URL/cities/id`
+**GET - Get List of Cities** BASE_URL/cities  
+**GET - Get specific City** BASE_URL/cities/id  
 
-**POST - Create City** BASE_URL/cities
+**POST - Create City** BASE_URL/cities  
 
-**DELETE - Delete City** BASE_URL/cities/id
+**DELETE - Delete City** BASE_URL/cities/id  
 
 # Features of the App
 
-✔️ Fake login to access the app  : **Username** Giovanni **Password** 12345
-✔️ Viewing the cities list  
-✔️ Viewing the coutries list 
-✔️ Adding and removing cities from the list  
-✔️ Adding feedback about the city
+✔️ Fake login to access the app  :  **Username** Giovanni **Password** 12345
+✔️ Viewing the cities list    
+✔️ Viewing the coutries list   
+✔️ Adding and removing cities from the list    
+✔️ Adding feedback about the city  
 
 
 # Author
